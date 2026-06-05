@@ -18,9 +18,9 @@ export default function Navbar () {
                 {/* links */}
                 <div className="hidden md:flex items-center gap-7">
                     <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Home</a>
+                    <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Projects</a>
                     <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Journal</a>
-                    <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">About me</a>
-                    <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Work</a>
+                    <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">FAQ</a>
                     <button className="px-5 py-2 text-sm rounded-md border border-green-md text-cream hover:bg-green-md/10 ease-in-out cursor-pointer hover:border-green-500 transition-colors duration-300">Contact</button>
                 </div>
                     {/* hamburger menu */}

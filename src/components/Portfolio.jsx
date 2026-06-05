@@ -13,7 +13,7 @@ const projects = [
 
 export default function Portfolio() {
     return(
-        <section className="bg-dark px-6 py-20 md:px-16">
+        <section className="bg-dark px-6 pt-6 pb-20 md:px-16">
             {/* header for portfolio */}
             <div className="mb-12">
                 <h4 className="text-green-md text-xs tracking-widest uppercase mb-3">Projects</h4>
@@ -48,6 +48,13 @@ export default function Portfolio() {
                         </div>
                     </div>
                 ))}
+            </div>
+                  {/* see all */}
+            <div className="flex justify-center mt-12">
+              <button className="flex items-center gap-2 text-cream/60 text-sm hover:text-cream transition-colors duration-300 cursor-pointer group">
+                See all projects
+                <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+              </button>
             </div>
         </section>
     )
