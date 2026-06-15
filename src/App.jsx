@@ -1,24 +1,25 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
-import Inquiry from './components/Inquiry'
+import Home from './pages/Home'
+import About from './pages/About'
 
 
 
-function App() {
+export default function App() {
 
 
   return (
     <div className='min-h-screen bg-[#1e1a17]'>
-      <Navbar/>
-      <Hero/>
-      <Portfolio/>
-      <Inquiry/>
+      <Navbar/> 
+      {/* navbar and contact will be shown in all the pages. for this reason they are out of routes */}
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/about' element={<About/>} />
+      </Routes>
       <Contact/>
     </div>
   )
 }
 
-export default App

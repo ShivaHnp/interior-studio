@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from 'react-router-dom'
 
 
 export default function Navbar () {
@@ -7,21 +8,27 @@ export default function Navbar () {
 
 
     return(
-        <nav className="bg-dark border-b border-green/30 ">
+        <nav className="bg-dark border-b border-green/30 sticky top-0 z-50">
             {/* desktap nav bar */}
-            <div className="flex items-center justify-between px-6 py-5 md:px-10">
+            <div className="flex items-center justify-between px-6 py-5 md:px-10 ">
                 {/* logo */}
-                <div className="flex flex-col gap-1">
+                <Link to="/" className="flex flex-col gap-1">
                     <span className="text-cream text-sm font-medium tracking-wider">Nikta Moradi</span>
                     <span className="w-6 h-[2px] bg-green-md" />
-                </div>
+                </Link>
                 {/* links */}
                 <div className="hidden md:flex items-center gap-7">
-                    <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Home</a>
-                    <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Projects</a>
-                    <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Journal</a>
-                    <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">FAQ</a>
-                    <button className="px-5 py-2 text-sm rounded-md border border-green-md text-cream hover:bg-green-md/10 ease-in-out cursor-pointer hover:border-green-500 transition-colors duration-300">Contact</button>
+                    <Link to="/" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Home</Link>
+                    <Link to="/projects" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Projects</Link>
+                    <Link to="/about" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">About</Link>
+                    
+                    <button 
+                      onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                      className="px-5 py-2 text-sm rounded-md border border-green-md text-cream hover:bg-green-md/10 transition-colors duration-300 cursor-pointer"
+                    >
+                      Contact
+                    </button>
+                    
                 </div>
                     {/* hamburger menu */}
                 <button 
@@ -34,13 +41,17 @@ export default function Navbar () {
             {/* mobile nav bar */}
             {isOpen && (
                 <div className="md:hidden flex flex-col px-6 pb-6 gap-4 border-t border-green/20">
-                    <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Home</a>
-                    <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Journal</a>
-                    <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">About me</a>
-                    <a href="" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Work</a>
-                    <button className="w-full py-2 text-sm rounded-md border border-green-md text-cream hover:bg-green-md hover:text-dark transition-colors duration-300">
-                        Contact
+                    <Link to="/" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Home</Link>
+                    <Link to="/projects" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Projects</Link>
+                    <Link to="/about" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">About</Link>
+                    
+                    <button 
+                      onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                      className="px-5 py-2 text-sm rounded-md border border-green-md text-cream hover:bg-green-md/10 transition-colors duration-300 cursor-pointer"
+                    >
+                      Contact
                     </button>
+
                 </div>
             )}
         </nav>

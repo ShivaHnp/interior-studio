@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section className="bg-[#161e16] px-12 py-16 md:px-16 overflow-hidden relative">
+    <section id="contact" className="bg-[#161e16] px-12 py-16 md:px-16 overflow-hidden relative">
       
       {/* backgrnd */}
       <div className="absolute top-0 right-0 text-[180px] font-medium leading-none text-green/10 pointer-events-none select-none tracking-tighter">
