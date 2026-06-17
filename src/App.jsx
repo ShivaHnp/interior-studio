@@ -4,6 +4,8 @@ import Navbar from './components/Navbar'
 import Contact from './components/Contact'
 import Home from './pages/Home'
 import About from './pages/About'
+import ProjectDetail from './pages/ProjectDetail'
+import Projects from './pages/Projects'
 
 
 
@@ -17,6 +19,8 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
+        <Route path='/projects' element={<Projects/>} />
+        <Route path='/projects/:slug' element={<ProjectDetail/>} />
       </Routes>
       <Contact/>
     </div>
