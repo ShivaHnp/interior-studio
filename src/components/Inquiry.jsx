@@ -27,7 +27,7 @@ export default function Inquiry() {
     const labelClass= 'text-cream/40 text-[11px] tracking-widest uppercase'
 
     return (
-        <section className="bg-[#111a12] px-6 py-20 md:px-16">
+        <section id="inquiry" className="bg-[#111a12] px-6 py-20 md:px-16">
             <div className="max-w-3xl">
                 {/* header */}
                 <div className="mb-12">

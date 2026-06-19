@@ -33,18 +33,18 @@ export default function Contact() {
           <div>
             <p className="text-cream/30 text-xs tracking-widest uppercase mb-2">Write to me</p>
             <a
-              href="mailto:hello@niktamoradi.com"
+              href="mailto:niktamrd@gmail.com"
               className="text-cream text-base hover:text-green-md transition-colors duration-300"
             >
-              hello@niktamoradi.com
+              niktamrd@gmail.com
             </a>
           </div>
 
           <div className="flex gap-3">
-            <a href="#" className="text-cream/40 text-xs px-4 py-2 border border-cream/10 rounded-full hover:border-green-md/40 hover:text-green-md transition-colors duration-300">
+            <a href="https://www.instagram.com/niktamoradi/" target="_blank" rel="noopener noreferrer" className="text-cream/40 text-xs px-4 py-2 border border-cream/10 rounded-full hover:border-green-md/40 hover:text-green-md transition-colors duration-300">
               Instagram
             </a>
-            <a href="#" className="text-cream/40 text-xs px-4 py-2 border border-cream/10 rounded-full hover:border-green-md/40 hover:text-green-md transition-colors duration-300">
+            <a href="https://www.linkedin.com/in/nikta-moradi-290663240/" target="_blank" rel="noopener noreferrer" className="text-cream/40 text-xs px-4 py-2 border border-cream/10 rounded-full hover:border-green-md/40 hover:text-green-md transition-colors duration-300">
               LinkedIn
             </a>
             <a href="#" className="text-cream/40 text-xs px-4 py-2 border border-cream/10 rounded-full hover:border-green-md/40 hover:text-green-md transition-colors duration-300">
@@ -57,7 +57,7 @@ export default function Contact() {
 
       {/* footer */}
       <div className="flex justify-between items-center mt-16 pt-6 border-t border-green/10">
-        <span className="text-cream/20 text-xs">© 2025 Nikta Moradi · Milan</span>
+        <span className="text-cream/20 text-xs">© 2025 Nikta Moradi · Paris</span>
         <div className="w-1.5 h-1.5 rounded-full bg-green-md opacity-40" />
       </div>
 
