@@ -50,7 +50,7 @@ export default function ProjectDetail() {
 
             {/* photo gallery for each project */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                {project.images.map((img, index) => (
+                {project.images.slice(1).map((img, index) => (
                     <div key={index} className="rounded-lg overflow-hidden">
                         <img src={img} alt={`${project.name} ${index+1}`} className="w-full h-auto object-cover" />
                     </div>

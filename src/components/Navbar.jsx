@@ -66,7 +66,7 @@ export default function Navbar () {
                     <Link to="/projects" className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 ease-in-out">Projects</Link>
                     <button 
                         onClick={() => scrollToSection('inquiry')}
-                        className="text-cream/50 text-sm hover:text-cream transition-colors duration-300 cursor-pointer"
+                        className="text-left text-cream/50 text-sm hover:text-cream transition-colors duration-300 cursor-pointer"
                     >
                         Inquiry
                     </button>
