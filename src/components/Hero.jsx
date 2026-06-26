@@ -1,4 +1,4 @@
-import heroImg from '../assets/project 4/cover.png'
+import heroImg from '../assets/project 4/cover.webp'
 import { Link } from 'react-router-dom'
 
 export default function Hero() {

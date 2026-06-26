@@ -1,7 +1,7 @@
-// import project1 from '../assets/project 1/cover.png'
-// import project2 from '../assets/project 2/cover.png'
-// import project3 from '../assets/project 3/cover.png'
-// import project4 from '../assets/project 4/cover.png'
+// import project1 from '../assets/project 1/cover.webp'
+// import project2 from '../assets/project 2/cover.webp'
+// import project3 from '../assets/project 3/cover.webp'
+// import project4 from '../assets/project 4/cover.webp'
 import { projects } from '../data/projects'
 import { Link } from 'react-router-dom';
 

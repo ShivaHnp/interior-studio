@@ -53,7 +53,7 @@ export default function Navbar () {
                 </div>
                     {/* hamburger menu */}
                 <button 
-                    className="md:hidden text-cream/70 hover:text-cream transition-colors duration-300"
+                    className="md:hidden text-cream/70 hover:text-cream transition-colors duration-300 text-2xl"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? '✕' : '☰'}
