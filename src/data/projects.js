@@ -81,4 +81,4 @@ export const projects = [
 
         images: [p4_cover, p4_2, p4_3, p4_4, p4_5]
     },
-]زی 
+]

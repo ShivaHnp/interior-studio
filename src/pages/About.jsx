@@ -1,4 +1,4 @@
-import profileImg from '../assets/about/profile.jpeg'
+import profileImg from '../assets/about/profile.webp'
 
 
 export default function About() {
